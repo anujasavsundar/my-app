@@ -4,10 +4,11 @@ pipeline{
     stages{
         stage("SCM"){
             steps{
-               git clone https://github.com/anujasavsundar/my-app.git
+               git https://github.com/anujasavsundar/my-app.git
             }
-            
         }
+            
+        
         
         stage("Build"){
             steps{
