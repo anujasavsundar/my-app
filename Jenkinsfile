@@ -1,4 +1,4 @@
-node{
+pipeline{
 	stages{
 		stage("GIT"){
 		 git 'https://github.com/anujasavsundar/my-app.git'
