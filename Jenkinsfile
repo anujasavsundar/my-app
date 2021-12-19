@@ -1,5 +1,4 @@
-pipeline{
-	agent any
+node{
 	stages{
 		stage("GIT"){
 		 git https://github.com/anujasavsundar/my-app.git
