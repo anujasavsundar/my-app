@@ -1,7 +1,7 @@
 node{
 	stages{
 		stage("GIT"){
-		 git https://github.com/anujasavsundar/my-app.git
+		 git 'https://github.com/anujasavsundar/my-app.git'
 		}
 		
 		stage("Maven"){
