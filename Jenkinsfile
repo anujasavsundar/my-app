@@ -1,5 +1,5 @@
-pipeline{
-	stages{
+node{
+	
 		stage("GIT"){
 		 git 'https://github.com/anujasavsundar/my-app.git'
 		}
@@ -7,5 +7,5 @@ pipeline{
 		stage("Maven"){
 		 sh 'mvn clean install'
 		}
-	}
+	
 }
