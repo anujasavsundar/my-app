@@ -1,12 +1,17 @@
 pipeline{
     agent any
-    triggers {
-      pollSCM '* * * * *'
-    }
+    
     stages{
         stage("SCM"){
             steps{
-               echo "job ran.....again and again"
+               git clone https://github.com/anujasavsundar/my-app.git
+            }
+            
+        }
+        
+        stage("Build"){
+            steps{
+                sh 'mvn clean install'
             }
         }
     }
